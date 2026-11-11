@@ -1,5 +1,7 @@
 # FEPAR website
 
+THE FESTAC PAN AFRICAN RENAISSANCE
+
 FEPAR is a statically exported Next.js website. Each page is emitted as its own HTML route, and the export can be hosted by any static web host.
 
 ## Requirements
@@ -44,4 +46,3 @@ The inquiry form is processed by Netlify Forms when deployed to Netlify. Static 
 - `/development/`
 - `/contact/`
 - `/contact/success/`
-
