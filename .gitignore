@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+.env*
+!.env.example
+.netlify/
+.playwright-mcp/
+${input:duckdb_db_path}
+fepar-*.png
+final-*.png

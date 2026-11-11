@@ -1,0 +1,13 @@
+# FEPAR — Festac Pan African Renaissance
+
+FEPAR is a Pan-African platform connecting enterprise, diaspora partnerships, creative industries, youth talent, development, infrastructure, cultural rights, heritage, research and community-led action across Africa and its global diaspora. In the lead-up to the 2027 50th anniversary of FESTAC '77, the site presents a FEPAR invitation to remember, reconnect and imagine a digital “Second Homecoming.”
+
+## Main routes
+- [FEPAR](https://www.fepar.africa/): Platform overview, proposition and working approach.
+- [FESTAC '77 at 50](https://www.fepar.africa/festac-50/): Sourced 1966–1977–2027 timeline and an invitation-stage vision for a communal, archival and forward-looking digital platform. Proposed archive, directory, grant and event features are not live services.
+- [Diaspora Partnerships & Development](https://www.fepar.africa/diaspora/): Diaspora relationships, development thinking and infrastructure-minded partnerships.
+- [Artist Pathways & Cultural Industries](https://www.fepar.africa/records/): Artist and producer pathways, music, cultural rights and collaboration.
+- [Development & Impact](https://www.fepar.africa/development/): Partnership priorities for youth, talent, cultural rights, infrastructure, diaspora connection and research.
+- [Contact](https://www.fepar.africa/contact/): Partnership, development, records and general inquiries.
+
+FEPAR focus areas describe priorities and possible partnership pathways, not claims that every program or service is active. Development topics are not claims of completed projects.

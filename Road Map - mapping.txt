@@ -1,0 +1,109 @@
+Choice A
+Festac Pan African Renaissance Diaspora Foundation
+(Incorporated Trustees under Part C of CAMA 2020)
+
+Registered Office: Block 3, 2nd Avenue, 23 Road, M Close, Festac Town, Lagos State, Nigeria
+
+Official Notice of Name Update & Incorporation Alignment
+With the incorporation name formally updated and finalized as Festac Pan African Renaissance Diaspora Foundation, all foundational documentation, governance frameworks, and digital ecosystems for www.fepar.africa have been structurally aligned.
+
+The updated naming convention seamlessly anchors our heritage in Festac Town while projecting a powerful Pan-African diaspora mandate.
+
+Summary of Updated Entity Structure
+Festac Pan African Renaissance Diaspora Foundation (NGO / Incorporated Trustees)
+
+Status: Post-28 day public notice finalized; moving into final certificate issuance and account opening.
+
+Trustees: David Akpoviroro Oke (Chairman), Emmanuel Okwoka (Secretary), Rowland Ogbuzulu (Member).
+
+Focus: Humanitarian interventions, Pan-African community development, youth STEM education, cultural preservation, and institutional collaborations.
+
+Fepar Enterprise Ltd (Limited Liability Company)
+
+Status: Active commercial, technological infrastructure, and trade arm.
+
+Focus: Digital transformation, AfCFTA integration, and sovereign enterprise architecture.
+
+Fepar Records Ltd (Limited Liability Company / Creative Media Flagship)
+
+Status: Highly visible sonic and cultural production powerhouse.
+
+Focus: Contemporary African music, publishing rights, sync licensing, and audio production spearheaded by Sage on the Beat and HammerGeek.
+
+Developer & Design Workflow for www.fepar.africa
+The web platform is structured to reflect an unconventionally African design aesthetic, integrating deep cultural motifs, bold typography, and a strict separation of charitable operations from commercial enterprise.
+
++-----------------------------------------------------------------------+
+|                        www.fepar.africa                               |
+|                  (Pan-African Digital Ecosystem)                      |
++-----------------------------------------------------------------------+
+       |                                           |
+       v                                           v
++-------------------------------+   +-----------------------------------+
+|    FEPAR RECORDS LTD          |   | FESTAC PAN AFRICAN RENAISSANCE    |
+|    (Commercial / Audio & Art) |   | DIASPORA FOUNDATION (NGO)         |
+|    - Sonic & Production Hub   |   | - Humanitarian Interventions      |
+|    - Streaming & Sync Roster  |   | - Cultural & STEM Initiatives     |
+|    - Artsy Luxuria Atelier    |   | - Community Development           |
++-------------------------------+   +-----------------------------------+
+Visual & UI/UX Design System for the Portal
+Color Palette:
+
+Royal Ochre Gold (#D4AF37) — Excellence & Heritage
+
+Deep Terracotta (#A0301B) — Earth & Roots
+
+Obsidian Black (#111111) — Sovereign Depth
+
+Forest Emerald (#0B4234) — Growth & Renewal
+
+Motifs & Iconography: Custom SVG Adinkra symbols (Sankofa, Gye Nyame) intertwined with modern tech-grid patterns, eliminating generic western templates in favor of a bold, structural Afro-futurist layout.
+
+Would you like to proceed with drafting the updated Board Resolution or the Bank Account Opening Documentation reflecting the exact name Festac Pan African Renaissance Diaspora Foundation?
+
+Choice B
+The updated NGO name Festac Pan African Renaissance Diaspora Foundation has been successfully integrated into your brand governance and web architecture. Below is the complete developer workflow and structural design blueprint for www.fepar.africa, highlighting the active commercial entities (Fepar Records Ltd and Fepar Enterprise Ltd) alongside the foundation.
+
+Here is the full technical and design blueprint structured for your engineering and creative team:
+
+1
+Phase 1: Brand System & Design Token Setup
+Configure the CSS variable design tokens for Pan-African aesthetics, including Ochre Gold (#D4AF37), Terracotta Red (#A0301B), Obsidian Black (#121316), and Forest Emerald (#0B4234).
+
+2
+Phase 2: Component Architecture & Entity Isolation
+Build distinct modular layout blocks ensuring Fepar Records Ltd features prominent streaming/sync widgets while clearly delineating the Foundation's regulatory status.
+
+3
+Phase 3: Edge Deployment & Domain Routing
+Deploy the Next.js / static frontend to Cloudflare Pages mapped directly to www.fepar.africa with strict SSL and asset compression.
+
+Pan-African UI/UX Design System & Layout Concept
+To break away from sterile, Western corporate minimalism, fepar.africa utilizes an unconventionally African visual language inspired by pre-colonial geometry, Edo bronze symmetry, Kente color blocks, and modern Afrofuturism.
+
+Design Element	Aesthetic Specification	Application
+Color Palette	Ochre Gold, Terracotta, Obsidian, Indigo	Gradients, borders, and badge highlights
+Typography	Display: Syne / Clash Display; Body: Inter	Headlines command high authority; body is crisp
+Motifs	Adinkra (Gye Nyame, Sankofa) & Nsibidi glyphs	Background watermark vectors and section dividers
+Layout Structure	Asymmetric grid, overlapping panels, and glassmorphism	Hero sections and music release showcases
+Developer Engineering Workflow
+The codebase is structured as a monorepo separating static marketing assets, the Fepar Records audio streaming pipeline, and NGO compliance documentation portals.
+
+Bash
+# 1. Clone repository & install dependencies
+git clone https://github.com/fepar-empire/fepar-africa-web.git
+cd fepar-africa-web
+npm install
+
+# 2. Run local development server with Pan-African design tokens
+npm run dev
+# Access locally at http://localhost:3000
+
+Was this visual helpful?
+Next Steps & Technical Explorations
+
+Generate Fepar Records Audio Player component
+
+Draft Pan-African CSS Design Tokens
+
+Build Hero Section Markup
