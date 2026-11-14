@@ -11,7 +11,7 @@
     "preview": "npm run build && node scripts/preview.mjs",
     "start": "node scripts/preview.mjs",
     "lint": "eslint .",
-    "preview:online": "npm run build && npx --yes netlify-cli deploy --dir=out --allow-anonymous --alias=fepar-preview"
+    "preview:online": "npm run build && npx --yes netlify-cli deploy --dir=out --functions=netlify/functions --alias=fepar-preview"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

@@ -5,7 +5,7 @@ export const dynamic = "force-static";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: "*", allow: "/", disallow: "/contact/success/" },
-    sitemap: "https://www.fepar.africa/sitemap.xml",
-    host: "https://www.fepar.africa",
+    sitemap: "https://fepar.africa/sitemap.xml",
+    host: "https://fepar.africa",
   };
 }

@@ -2,35 +2,36 @@ import type { Metadata } from "next";
 import { ArrowUpRight, Shield, Heart, Sparkles, Globe, Briefcase } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About FEPAR — Festac Pan African Renaissance",
-  description: "Who we are — FESTAC Pan African Renaissance (FEPAR) is a Pan-African ecosystem advancing creative industries, youth development, diaspora partnerships, and cultural heritage from FESTAC 77 to the world.",
+  title: "About FEPAR — FESTAC Pan African Renaissance",
+  description: "Learn about FEPAR's mission, rooted in FESTAC '77: African cultural stewardship, youth skills and crafts, creative enterprise and reciprocal diaspora partnership.",
   alternates: { canonical: "/about/" },
   openGraph: {
-    title: "About FEPAR | Festac Pan African Renaissance",
-    description: "Intellectually African. Creativity Unlocks the Mind. From FESTAC to the World.",
+    title: "About FEPAR — FESTAC Pan African Renaissance",
+    description: "Explore the vision behind FEPAR's work in African heritage, youth skills, creative enterprise and diaspora partnership.",
+    url: "/about/",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "FEPAR — About" }],
   },
 };
 
 const statItems = [
-  { label: "Nations represented at FESTAC 77", value: "55+" },
-  { label: "Years of Pan-African renaissance thinking", value: "50" },
-  { label: "Ecosystem pillars under one umbrella", value: "4" },
-  { label: "SDG goals we advance", value: "4" },
+  { label: "FESTAC '77 held in Lagos", value: "1977" },
+  { label: "Fiftieth anniversary of FESTAC '77", value: "2027" },
+  { label: "The place that inspires this vision", value: "Lagos" },
+  { label: "An invitation to shape what comes next", value: "Now" },
 ];
 
 const valueItems = [
-  { icon: Shield, title: "Cultural Stewardship", body: "We protect, preserve, and amplify African cultural expression as infrastructure — not commodity." },
-  { icon: Heart, title: "Community First", body: "Every initiative starts with the people it serves. Dignity, agency, and opportunity come before scale." },
+  { icon: Shield, title: "Cultural Stewardship", body: "We want cultural memory to be documented with its holders' permission, context and control — not treated as a commodity." },
+  { icon: Heart, title: "Humanitarian by Design", body: "Our work should begin with community-defined needs, young people's agency and care for those most often left out. Dignity comes before scale." },
   { icon: Sparkles, title: "Creative Excellence", body: "We believe African creativity is a form of development — worthy of investment, respect, and global platforms." },
-  { icon: Globe, title: "Pan-African Solidarity", body: "From FESTAC 77 to Agenda 2063, we build reciprocal bridges across Africa and its global diaspora." },
+  { icon: Globe, title: "Pan-African Solidarity", body: "Inspired by FESTAC '77, we want to explore reciprocal relationships across Africa and its global diaspora." },
   { icon: Briefcase, title: "Economic Dignity", body: "Sustainable creative industries mean fair terms, real ownership, and lasting livelihoods for makers." },
 ];
 
 const missionItems = [
-  { title: "Our Mission", body: "To transform the spirit of FESTAC 77 into a living Pan-African ecosystem — connecting creative industries, youth development, diaspora partnership, and cultural heritage into durable infrastructure for Africa and its global diaspora." },
-  { title: "Our Vision", body: "A world where African creativity is recognized as foundational infrastructure — where every artist, educator, builder, and visionary has the pathways, platforms, and partnerships to thrive on their own terms." },
-  { title: "Our Origin", body: "FEPAR emerges from FESTAC Town — the city built for the Second World Black and African Festival of Arts and Culture in 1977. That moment proved Africans could design, construct, and sustain systems at continental scale. We carry that belief forward." },
+  { title: "Our Mission", body: "To connect the Pan-African history of cultural exchange to practical possibilities for the people who inherit it: makers, artists, young learners and neighbours. We want memory to inform useful skills, fair creative ownership and reciprocal relationships rather than end at commemoration." },
+  { title: "Our Vision", body: "An African future that communities can make and sustain themselves: cultural knowledge is accessible without dispossession, makers are credited and paid fairly, young people learn alongside practitioners, and diaspora exchange strengthens local agency." },
+  { title: "Our Point of Departure", body: "FEPAR is a grassroots initiative taking inspiration from FESTAC '77 and Festac Town, Lagos. The festival and the everyday life of the town are different chapters. We do not speak for residents, hold an official festival archive, or organise the state anniversary." },
 ];
 
 export default function AboutPage() {
@@ -46,9 +47,10 @@ export default function AboutPage() {
                 <em>Renaissance.</em>
               </h1>
               <p className="lede">
-                FEPAR is a Pan-African ecosystem built on the belief that creativity,
-                culture, and community are forms of infrastructure. From FESTAC 77 to
-                the world — we advance the renaissance that began in Lagos.
+                FEPAR is a grassroots Pan-African initiative rooted in Festac Town, Lagos.
+                We are not another official festival. We want to connect historical memory
+                with the everyday conditions for creativity: learning, craft, fair ownership
+                and community care.
               </p>
               <div className="about-actions">
                 <a href="/contact/" className="btn-gold">
@@ -119,6 +121,8 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="about-bridge" aria-labelledby="about-bridge-title"><div className="wrap about-bridge-grid"><div><p className="eyebrow">History into practice</p><h2 className="display" id="about-bridge-title">What do we<br /><em>carry forward?</em></h2><p>The 1956 and 1959 writers&apos; congresses asked how knowledge could serve freedom. Dakar and Algiers disagreed about whose culture belonged on the stage. FESTAC &apos;77 gathered people at extraordinary scale. Our grassroots question is what a neighbour, craftsperson or young creator can still use when the spectacle ends.</p><a href="/festac-50/#research-paths" className="text-link">Follow the source paths <ArrowUpRight size={17} aria-hidden="true" /></a></div><div className="about-bridge-list"><a href="/festac-50/#archive-practice"><span>01 / Memory</span><strong>Keep the record accountable.</strong><small>Context, consent and the right to be credited.</small></a><a href="/development/"><span>02 / Learning</span><strong>Value the maker&apos;s knowledge.</strong><small>Craft, repair, technical skills and fair teaching.</small></a><a href="/records/"><span>03 / Ownership</span><strong>Ask who benefits.</strong><small>Clear permissions before publishing or licensing creative work.</small></a><a href="/diaspora/"><span>04 / Connection</span><strong>Practice reciprocity.</strong><small>Exchange shaped with communities, not imposed upon them.</small></a></div></div></section>
+
       <section className="join-corporate-section" aria-labelledby="join-title">
         <div className="wrap">
           <div className="join-inner" data-reveal>
@@ -129,18 +133,18 @@ export default function AboutPage() {
             </h2>
             <p className="lede">
               Whether you are an artist, institution, investor, educator, or builder —
-              there is a place for you in the FEPAR ecosystem.
+              we welcome a conversation about what we could build together.
             </p>
             <div className="join-routes">
               <article className="join-route">
                 <h3>Partner with FEPAR</h3>
-                <p>Bring an institution, programme, or shared ambition to the ecosystem.</p>
+                <p>Explore a shared ambition with clear responsibilities and community benefit.</p>
                 <a href="/partners/">Explore partnerships <ArrowUpRight size={15} aria-hidden="true" /></a>
               </article>
               <article className="join-route">
-                <h3>Work at FEPAR</h3>
-                <p>Join the team building Pan-African infrastructure for creative industries.</p>
-                <a href="/careers/">See opportunities <ArrowUpRight size={15} aria-hidden="true" /></a>
+                <h3>Share your skills</h3>
+                <p>Introduce yourself for future work or volunteering conversations; no roles are listed now.</p>
+                <a href="/careers/">Explore ways to contribute <ArrowUpRight size={15} aria-hidden="true" /></a>
               </article>
               <article className="join-route">
                 <h3>Support the work</h3>

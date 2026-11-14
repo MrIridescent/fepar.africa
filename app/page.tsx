@@ -1,18 +1,19 @@
-import { ArrowDownRight, ArrowRight, ArrowUpRight, Drama, Globe2, GraduationCap, Music2 } from "lucide-react";
+import { ArrowDownRight, ArrowRight, ArrowUpRight, Atom, Drama, Globe2, GraduationCap, Music2 } from "lucide-react";
 import type { Metadata } from "next";
 import React from "react";
+import Image from "next/image";
 import { ParallaxHero, RevealOnScroll, MagneticButton } from "@/components/MotionSystem";
 import { PanAfricanQuoteCarousel } from "@/components/PanAfricanQuotes";
-import { FestacHero, FestacTimeline, FestacTownStory, FromFestacBanner } from "@/components/FestacLegacy";
+import { FestacHero, FestacTimeline, FestacTownStory } from "@/components/FestacLegacy";
 import { SDGImpactDashboard } from "@/components/SDGImpactDashboard";
 
 export const metadata: Metadata = {
   title: "FEPAR ECOSYSTEM — From FESTAC to the World",
-  description: "From FESTAC 77 to the world: Advancing SDG Goals (especially Climate Action) and AU Agenda 2063 through arts, upskilling, learning, pan-African partnerships. Intellectually African.",
+  description: "FEPAR connects African culture and practical possibility: youth development, skills and crafts, creativity for self-reliance, and Pan-African partnerships rooted in real value.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "FEPAR ECOSYSTEM — From FESTAC to the World",
-    description: "Advancing SDG Goals and AU Agenda 2063 through arts, learning, and pan-African development.",
+    description: "A Pan-African vision grounded in youth development, useful skills, cultural stewardship and creative self-reliance.",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "FEPAR ECOSYSTEM" }],
   },
 };
@@ -36,10 +37,10 @@ const ecosystemAreas = [
   {
     number: "02",
     title: "Creative Arts & Performance Platform",
-    body: "Strengthening conditions around performing arts so African creativity can be made, valued, and shared on fair terms. Spaces for creators to exchange skills and build stronger work.",
+    body: "Exploring what performers need to make work, exchange skills and reach audiences on fair terms. An invitation to shape better conditions together, not a finished programme.",
     icon: <Drama size={24} aria-hidden="true" />,
-    href: "/festac-50/",
-    linkLabel: "See the cultural stage",
+    href: "/performing-arts/",
+    linkLabel: "Explore performing arts",
     color: "#E63946",
     accent: "rgba(204, 0, 1, 0.08)",
     border: "rgba(204, 0, 1, 0.35)",
@@ -57,8 +58,8 @@ const ecosystemAreas = [
   },
   {
     number: "04",
-    title: "Community Investment & Learning Initiatives",
-    body: "Supporting young Africans with pathways to skills, confidence, meaningful work, and leadership through upskilling drives, educational programs, and community-led action.",
+    title: "Youth, Skills & Self-Reliance",
+    body: "Exploring practical routes into crafts, repair, design and digital skills with young people and working makers. Useful capabilities, fair livelihoods and community needs before hype.",
     icon: <GraduationCap size={24} aria-hidden="true" />,
     href: "/development/",
     linkLabel: "See learning priorities",
@@ -66,38 +67,44 @@ const ecosystemAreas = [
     accent: "rgba(214, 166, 107, 0.08)",
     border: "rgba(214, 166, 107, 0.3)",
   },
+  {
+    number: "05",
+    title: "Innovation & STEM",
+    body: "Exploring where science, technology and cultural intelligence meet local questions—from climate adaptation to shared learning and purposeful enterprise.",
+    icon: <Atom size={24} aria-hidden="true" />,
+    href: "/innovation/",
+    linkLabel: "Explore innovation",
+    color: "#42d6c2",
+    accent: "rgba(66, 214, 194, 0.08)",
+    border: "rgba(66, 214, 194, 0.3)",
+  },
 ];
 
 export default function HomePage() {
   return (
     <>
-      {/* HERO */}
-      <ParallaxHero backgroundImage="radial-gradient(circle at 78% 48%, rgba(244, 168, 0, 0.16) 0%, transparent 42%), radial-gradient(circle at 12% 82%, rgba(0, 155, 58, 0.1) 0%, transparent 38%)">
+      <ParallaxHero backgroundImage="radial-gradient(circle at 80% 20%, rgba(185, 128, 49, .12), transparent 42%)">
         <section className="home-hero">
           <div className="home-hero-inner">
-            <div className="signal-rail" aria-label="FEPAR mottos">
-              <span className="signal-rail-line" aria-hidden="true" />
-              <span className="signal-rail-label">SIGNAL / 01</span>
-              <MottoBadge highlight>Intellectually African</MottoBadge>
-              <MottoBadge>Creativity Unlocks the Mind</MottoBadge>
-              <MottoBadge>From FESTAC to the World</MottoBadge>
+            <div className="home-edition">
+              <span>FEPAR / A living renaissance</span>
+              <span>Art · Memory · Future</span>
+              <span>01 / The beginning</span>
             </div>
 
             <div className="signal-copy">
               <RevealOnScroll>
                 <span className="home-eyebrow">From FESTAC to the World <span aria-hidden="true">/</span> FEPAR ECOSYSTEM</span>
                 <h1 className="home-title">
-                  Africa is not
-                  <br />
-                  a footnote.
-                  <br />
+                  Africa is not<br />
+                  a footnote.<br />
                   <em>It is the signal.</em>
                 </h1>
                 <p className="home-sub">
-                  Fifty years after Lagos welcomed the world, we carry FESTAC 77&apos;s spirit
-                  forward—transforming cultural memory into actionable impact, artistic
-                  expression into economic opportunity, pan-African unity into practical
-                  partnerships.
+                  Rooted in Festac Town, Lagos, FEPAR is a grassroots invitation to connect
+                  Pan-African memory with makers, young people and creative ownership.
+                  The history runs from Black print networks and cultural congresses to FESTAC &apos;77;
+                  the future belongs to communities building beyond a single festival.
                 </p>
                 <div className="home-ctas">
                   <MagneticButton>
@@ -116,31 +123,37 @@ export default function HomePage() {
               </RevealOnScroll>
             </div>
 
-            <div className="signal-field" aria-label="FESTAC signal map">
-              <div className="signal-orbit signal-orbit--outer" />
-              <div className="signal-orbit signal-orbit--mid" />
-              <div className="signal-orbit signal-orbit--inner" />
-              <div className="signal-axis" aria-hidden="true" />
-              <div className="signal-core"><span>77</span><small>FESTAC</small></div>
-              <span className="signal-node signal-node--one" />
-              <span className="signal-node signal-node--two" />
-              <span className="signal-node signal-node--three" />
-              <span className="signal-tag signal-tag--one">MEMORY</span>
-              <span className="signal-tag signal-tag--two">ACTION</span>
-              <span className="signal-tag signal-tag--three">DIASPORA</span>
-            </div>
+            <figure className="home-artwork">
+              <div className="home-artwork-frame">
+                <Image
+                  src="/renaissance-artwork.png"
+                  alt="Textured Pan-African artwork of circular heritage motifs interwoven with a contemporary city skyline"
+                  width={1376}
+                  height={768}
+                  priority
+                  sizes="(max-width: 900px) 100vw, 56vw"
+                />
+                <span className="home-artwork-stamp" aria-hidden="true">F / 77</span>
+              </div>
+              <figcaption><span>Fig. 01 — A legacy in motion</span><span>Lagos, 1977 → Everywhere, now</span></figcaption>
+            </figure>
 
-            <div className="signal-proof" aria-label="FEPAR identity and proof points">
-              <div><strong>1977</strong><span>FESTAC Lagos</span></div>
-              <div><strong>55</strong><span>Nations convened</span></div>
-              <div><strong>17,000+</strong><span>Artists &amp; dignitaries</span></div>
-              <div><strong>2063</strong><span>AU Agenda horizon</span></div>
+            <div className="home-bottom">
+              <div className="home-mottos" aria-label="FEPAR mottos">
+                <MottoBadge highlight>Intellectually African</MottoBadge>
+                <MottoBadge>Creativity Unlocks the Mind</MottoBadge>
+                <MottoBadge>From FESTAC to the World</MottoBadge>
+              </div>
+              <a className="archive-cue" href="#festac-legacy">
+                Discover the story <ArrowDownRight size={17} aria-hidden="true" />
+              </a>
             </div>
-            <a className="archive-cue" href="#festac-legacy">
-              <span className="archive-cue-dot" aria-hidden="true" />
-              Scroll to enter the archive
-              <ArrowDownRight size={15} aria-hidden="true" />
-            </a>
+          </div>
+          <div className="signal-proof" aria-label="FEPAR identity and proof points">
+            <div><strong>1977</strong><span>FESTAC Lagos</span></div>
+            <div><strong>55</strong><span>Nations convened</span></div>
+            <div><strong>17,000+</strong><span>Artists &amp; dignitaries</span></div>
+            <div><strong>2063</strong><span>AU Agenda horizon</span></div>
           </div>
         </section>
       </ParallaxHero>
@@ -155,25 +168,22 @@ export default function HomePage() {
       {/* PAN-AFRICAN VOICES */}
       <PanAfricanQuoteCarousel />
 
-      {/* RENAISSANCE BANNER */}
-      <FromFestacBanner />
-
       {/* ECOSYSTEM */}
       <section id="ecosystem" className="eco-section">
         <div className="eco-inner">
           <RevealOnScroll>
             <div className="eco-head">
-              <span className="eco-eyebrow">What We Do</span>
+              <span className="eco-eyebrow">Where we want to build / grassroots directions</span>
               <h2 className="eco-title">
                 Connected by Purpose.
                 <br />
                 <em>United by Vision.</em>
               </h2>
               <p className="eco-lede">
-                Under one umbrella, our ecosystem advances multiple imperatives—from artist
-                development to diaspora partnerships, from creative industries to youth
-                education. Each strand strengthens the others, creating resilience and
-                lasting impact.
+                These are directions for community conversations, not claims of active
+                grants, an accredited academy, an official archive or an operating marketplace.
+                Our job is to connect the historical questions to practical work people
+                can shape and own together.
               </p>
             </div>
           </RevealOnScroll>
@@ -205,6 +215,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="home-lineage" aria-labelledby="home-lineage-title"><div className="wrap home-lineage-grid"><div><p className="eyebrow">Not nostalgia / a usable inheritance</p><h2 className="display" id="home-lineage-title">A century of ideas.<br /><em>A neighbourhood to begin in.</em></h2><p>Parisian Black publishing made conversations travel. Dakar gave culture a continental stage; Algiers contested its boundaries; Lagos made FESTAC &apos;77 a global meeting place. Festac Town reminds us that people still live with that legacy after the lights go down.</p><a className="text-link" href="/festac-50/#journey">Explore the sourced genealogy <ArrowUpRight size={17} aria-hidden="true" /></a></div><div className="home-lineage-steps"><a href="/festac-50/#journey"><span>1931—1959</span><strong>Print &amp; congresses</strong><small>Writers and artists argue over freedom, culture and belonging.</small></a><a href="/festac-50/#journey"><span>1966—1977</span><strong>Festival crossroads</strong><small>Dakar, Algiers, Kinshasa and Lagos do not tell one simple story.</small></a><a href="/festac-50/#research-paths"><span>Today</span><strong>Follow the record</strong><small>Research paths lead to the institutions and creators holding the work.</small></a></div></div></section>
+
+      <section className="home-value" aria-labelledby="home-value-title">
+        <div className="wrap home-value-grid">
+          <div data-reveal>
+            <p className="eyebrow">The work behind the future</p>
+            <h2 className="display" id="home-value-title">Real value<br />outlives <em>the hype.</em></h2>
+            <p className="home-value-intro">An Afrofuturist vision starts in the present: what can a young person learn, make, repair, own or pass on?</p>
+            <a href="/development/" className="text-link">Explore youth &amp; skills <ArrowUpRight size={17} aria-hidden="true" /></a>
+          </div>
+          <div className="home-value-ledger" aria-label="The practical questions guiding FEPAR's development direction" data-reveal>
+            <div><span>01 / Learn</span><p>Skills taught with context, care and working practitioners.</p></div>
+            <div><span>02 / Make</span><p>Craft and creativity applied to needs people recognise.</p></div>
+            <div><span>03 / Sustain</span><p>Fair terms, ownership and routes to lasting livelihoods.</p></div>
+          </div>
+        </div>
+      </section>
+
       {/* SDG + AU AGENDA 2063 */}
       <SDGImpactDashboard />
 
@@ -217,9 +245,16 @@ export default function HomePage() {
               Bring us your context, not just your pitch. Let&apos;s shape a renaissance
               platform rooted in memory and open to possibility.
             </p>
-            <a href="/contact/" className="btn-dark">
-              Let&apos;s Connect
+            <a href="/get-involved/" className="btn-dark">
+              Find your way in
               <ArrowRight size={20} aria-hidden="true" />
+            </a>
+            <a href="/manifesto/" className="join-manifesto-link">
+              Read the FEPAR manifesto <ArrowUpRight size={17} aria-hidden="true" />
+            </a>
+            <br />
+            <a href="/news/" className="join-manifesto-link">
+              Explore news &amp; ideas <ArrowUpRight size={17} aria-hidden="true" />
             </a>
           </div>
         </RevealOnScroll>

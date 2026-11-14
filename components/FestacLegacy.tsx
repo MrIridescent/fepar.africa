@@ -102,7 +102,7 @@ const HeroSection = styled.div`
   }
 `;
 
-const HeritageHeader = styled.h1`
+const HeritageHeader = styled.h2`
   font-family: ${props => props.theme.fonts.display};
   font-size: clamp(${props => props.theme.fontSizes['6xl']}, 8vw, ${props => props.theme.fontSizes['8xl']});
   line-height: 0.95;
@@ -289,23 +289,6 @@ const NarrativeImage = styled.div`
   }
 `;
 
-const FromFestacToTheWorld = styled.section`
-  background: linear-gradient(135deg, #009B3A 0%, #006128 50%, #003d19 100%);
-  padding: ${props => props.theme.spacing[40]} 0;
-  position: relative;
-  overflow: hidden;
-`;
-
-const BannerText = styled.div`
-  white-space: nowrap;
-  animation: banner-scroll 30s linear infinite;
-  
-  @keyframes banner-scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-`;
-
 // ===========================================
 // COMPONENTS
 // ===========================================
@@ -487,54 +470,6 @@ export function FestacTownStory() {
   );
 }
 
-export function FromFestacBanner() {
-  const phrases = ["From Festac To The World".repeat(5)];
-  
-  return (
-    <FromFestacToTheWorld>
-      <BackgroundPattern aria-hidden="true" />
-      
-      <RevealOnScroll>
-        <div style={{
-          maxWidth: "1440px",
-          margin: "0 auto",
-          padding: "0 48px",
-          textAlign: "center",
-        }}>
-          <h3 style={{
-            fontFamily: "Syne, sans-serif",
-            fontSize: "clamp(32px, 5vw, 64px)",
-            lineHeight: "1.2",
-            letterSpacing: "-0.03em",
-            color: "#F4F1DE",
-            marginBottom: "24px",
-          }}>
-            The Renaissance Continues
-          </h3>
-          
-          <p style={{
-            fontFamily: "Plus Jakarta Sans, sans-serif",
-            fontSize: "18px",
-            color: "#F4F1DE",
-            opacity: 0.8,
-            lineHeight: "1.6",
-            marginBottom: "48px",
-          }}>
-            Fifty years after FESTAC 77, we carry forward its school of thought—transforming cultural pride 
-            into tangible development, artistic expression into economic opportunity, pan-African unity 
-            into practical partnerships.
-          </p>
-          
-          {/* Animated Banner */}
-          <BannerText aria-label="Scrolling banner">
-            {phrases.join(" • ")}
-          </BannerText>
-        </div>
-      </RevealOnScroll>
-    </FromFestacToTheWorld>
-  );
-}
-
 // ===========================================
 // EXPORT
 // ===========================================
@@ -543,5 +478,4 @@ export default {
   FestacHero,
   FestacTimeline,
   FestacTownStory,
-  FromFestacBanner,
 };
