@@ -61,7 +61,7 @@ export function GetInvolvedForm() {
         <div className="field full"><label className="check" htmlFor="involve-consent"><input id="involve-consent" type="checkbox" name="consent" value="yes" required /><span>I agree that FEPAR may use these details to follow up about the interest I have shared. This is not a newsletter signup. *</span></label></div>
       </div>
       <button type="submit" className="cta" disabled={submitting} aria-busy={submitting}>{submitting ? "Sending…" : "Send my interest"} <ArrowUpRight size={18} aria-hidden="true" /></button>
-      <p className="involvement-form-note">Sent as an email to FEPAR, not a membership registration or a guaranteed response. This form works on Netlify; on other hosts, email <a href="mailto:hello@fepar.africa?subject=Get%20involved%20with%20FEPAR">hello@fepar.africa</a> instead.</p>
+      <p className="involvement-form-note">Sent as an email to FEPAR, not a membership registration or a guaranteed response. This form works on Netlify; on other hosts, email <a href="mailto:hello%40fepar.africa?subject=Get%20involved%20with%20FEPAR"><span>hello</span><span>@</span><span>fepar.africa</span></a> instead.</p>
       <p className="status" role={status === "error" ? "alert" : "status"} aria-live="polite">{feedback}</p>
     </form>
   );

@@ -57,8 +57,8 @@ export function SiteFooter() {
               </span>
             ))}
           </div>
-          <a href="mailto:hello@fepar.africa" style={{ color: "#F4A800", display: "inline-flex", alignItems: "center", gap: "8px" }}>
-            hello@fepar.africa <ArrowUpRight size={15} aria-hidden="true" />
+          <a href="mailto:hello%40fepar.africa" style={{ color: "#F4A800", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+            <span>hello</span><span>@</span><span>fepar.africa</span> <ArrowUpRight size={15} aria-hidden="true" />
           </a>
           <div style={{ marginTop: "24px" }}>
             <a href="https://www.facebook.com/fepar.africa" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: "10px", padding: "13px 17px", border: "1px solid #F4A800", color: "#F4F1DE", fontWeight: 700 }}>

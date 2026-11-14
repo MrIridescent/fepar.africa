@@ -9,4 +9,6 @@ build/
 .playwright-mcp/
 ${input:duckdb_db_path}
 fepar-*.png
+!public/fepar-logo.png
+!public/fepar-logo-icon.png
 final-*.png

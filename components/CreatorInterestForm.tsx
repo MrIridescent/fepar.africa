@@ -85,7 +85,7 @@ export function CreatorInterestForm() {
         <div className="field full"><label className="check" htmlFor="creator-consent"><input id="creator-consent" type="checkbox" name="consent" value="yes" required /><span>I agree that FEPAR may use these details to consider and respond to this introduction. My details will not be published. *</span></label></div>
       </div>
       <button type="submit" className="cta" disabled={submitting} aria-busy={submitting}>{submitting ? "Sending…" : "Share my practice"} <ArrowUpRight size={18} aria-hidden="true" /></button>
-      <p className="involvement-form-note">Your message is delivered by email using a third-party email service; do not include sensitive records. To request deletion or withdraw your introduction, email <a href="mailto:hello@fepar.africa?subject=Delete%20my%20creator%20introduction">hello@fepar.africa</a>. This is an expression of interest, not an application or public registry. If this form is unavailable, use that email address instead.</p>
+      <p className="involvement-form-note">Your message is delivered by email using a third-party email service; do not include sensitive records. To request deletion or withdraw your introduction, email <a href="mailto:hello%40fepar.africa?subject=Delete%20my%20creator%20introduction"><span>hello</span><span>@</span><span>fepar.africa</span></a>. This is an expression of interest, not an application or public registry. If this form is unavailable, use that email address instead.</p>
       <p className="status" role={status === "error" ? "alert" : "status"} aria-live="polite">{feedback}</p>
     </form>
   );
