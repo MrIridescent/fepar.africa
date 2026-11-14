@@ -142,9 +142,14 @@ export default function AboutPage() {
                 <a href="/partners/">Explore partnerships <ArrowUpRight size={15} aria-hidden="true" /></a>
               </article>
               <article className="join-route">
-                <h3>Share your skills</h3>
-                <p>Introduce yourself for future work or volunteering conversations; no roles are listed now.</p>
-                <a href="/careers/">Explore ways to contribute <ArrowUpRight size={15} aria-hidden="true" /></a>
+                <h3>Work with FEPAR</h3>
+                <p>Share your experience for future paid work; no vacancies are listed now.</p>
+                <a href="/careers/#career-interest">Express career interest <ArrowUpRight size={15} aria-hidden="true" /></a>
+              </article>
+              <article className="join-route">
+                <h3>Volunteer your time</h3>
+                <p>Offer your skills and availability for a future conversation, not an assigned placement.</p>
+                <a href="/careers/#volunteer-interest">Introduce yourself as a volunteer <ArrowUpRight size={15} aria-hidden="true" /></a>
               </article>
               <article className="join-route">
                 <h3>Support the work</h3>

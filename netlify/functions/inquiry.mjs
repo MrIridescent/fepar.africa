@@ -107,7 +107,40 @@ export default async function handler(request) {
 
   let subject;
   let text;
-  if (payload.kind === "involvement") {
+  if (payload.kind === "career" || payload.kind === "volunteer") {
+    const region = field(payload.region, 120, true);
+    const focus = field(payload.focus, 120, true);
+    const experience = field(payload.experience, 2000, true, true);
+    const availability = field(payload.availability, 200, true);
+    const portfolio = field(payload.portfolio ?? "", 300);
+    let portfolioUrl = "";
+    if (portfolio) {
+      try {
+        const url = new URL(portfolio);
+        if (!["https:", "http:"].includes(url.protocol) || url.username || url.password || !url.hostname.includes(".")) throw new Error();
+        portfolioUrl = url.href;
+      } catch {
+        return respond(400, "Please provide a valid portfolio link or leave it empty.");
+      }
+    }
+    if (!region || !focus || !experience || !availability || portfolio === null) {
+      return respond(400, "Please check all required fields and try again.");
+    }
+    const isCareer = payload.kind === "career";
+    subject = `${isCareer ? "Career" : "Volunteer"} introduction: ${focus}`;
+    text = [
+      `Private ${isCareer ? "career" : "volunteer"} introduction (not an application to an open role or a commitment to a schedule).`,
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Location: ${region}`,
+      `${isCareer ? "Work sought" : "Area to support"}: ${focus}`,
+      `${isCareer ? "Experience and skills" : "Skills and contribution"}:`,
+      experience,
+      `Availability: ${availability}`,
+      `Portfolio / profile: ${portfolioUrl || "Not provided"}`,
+      "Consent: May use these details to consider and respond to this introduction; no public listing.",
+    ].join("\n");
+  } else if (payload.kind === "involvement") {
     const region = field(payload.region, 120, true);
     const interest = field(payload.interest, 100, true);
     if (!region || !involvementInterests.has(interest)) {
