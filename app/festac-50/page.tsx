@@ -46,7 +46,7 @@ export default function Festac50Page() {
         <p className="eyebrow">FESTAC at 50 / 1977 — 2027</p>
         <h1 className="display" id="festac-title">FESTAC at 50.<br /><em>A second homecoming.</em></h1>
         <p>FESTAC &apos;77 gathered artists and communities in Lagos for the Second World Black and African Festival of Arts and Culture. Fifty years later, FEPAR is exploring ways to remember that history and imagine its future with communities across Africa and its diaspora. This is an independent invitation, not an announcement of an official anniversary programme.</p>
-        <a className="cta cta-teal" href="#journey">Follow the journey <ArrowRight size={17} aria-hidden="true" /></a>
+        <div className="festac-hero-actions"><a className="cta cta-teal" href="#journey">Follow the journey <ArrowRight size={17} aria-hidden="true" /></a><a href="#festival-images">See 1977 photographs <ArrowRight size={17} aria-hidden="true" /></a></div>
         <div className="festac-hero-date" aria-hidden="true"><span>50</span><small>YEARS<br />IN MOTION</small></div>
       </div>
     </section>
@@ -65,13 +65,28 @@ export default function Festac50Page() {
       </div>
     </section>
 
-    <section className="festac-archive" aria-labelledby="festac-archive-title">
+    <section className="festac-archive" id="festival-images" aria-labelledby="festac-archive-title">
       <div className="wrap">
         <div className="festac-archive-intro">
-          <p className="eyebrow">Images with a place and a date</p>
-          <h2 className="display" id="festac-archive-title">A living record,<br /><em>not a single moment.</em></h2>
-          <p>These photographs belong to different times and places: a gathering during FESTAC &apos;77 in Kaduna, and a scene in Festac Town nearly three decades later.</p>
+          <p className="eyebrow">FESTAC &apos;77 / Photographs from the festival</p>
+          <h2 className="display" id="festac-archive-title">A festival seen<br /><em>from many places.</em></h2>
+          <p>In Lagos, a regatta carried the celebrations onto the water. In Kaduna, the Grand Durbar brought riders and spectators together. These are documented scenes from 1977, not images of every performance or every community that took part.</p>
         </div>
+        <div className="festac-photo-grid">
+          <figure className="festac-archive-figure festac-photo-wide">
+            <Image src="/festac-50/regatta-lagos-1977.jpg" width={1100} height={734} loading="lazy" unoptimized alt="Boats taking part in the FESTAC '77 regatta on the water in Lagos" />
+            <figcaption><strong>On the water / Lagos, 1977.</strong> The FESTAC &apos;77 regatta. Photograph by Helinä Rautavaara, Helinä Rautavaara Museum collection. <a href="https://commons.wikimedia.org/wiki/File:Festac_%2777_Regatta_(22361732555).jpg" target="_blank" rel="noopener noreferrer">Original photograph</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>. Resized and compressed; no crop.</figcaption>
+          </figure>
+          <figure className="festac-archive-figure">
+            <Image src="/festac-50/grand-durbar-procession-1977.jpg" width={1100} height={725} loading="lazy" unoptimized alt="Participants at the Grand Durbar during FESTAC '77 in Kaduna" />
+            <figcaption><strong>At the Durbar / Kaduna, 1977.</strong> A scene from the Grand Durbar. Photograph by Helinä Rautavaara, Helinä Rautavaara Museum collection. <a href="https://commons.wikimedia.org/wiki/File:Festac_%2777_Grand_Durbar_(22348649122).jpg" target="_blank" rel="noopener noreferrer">Original photograph</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>. Resized and compressed; no crop.</figcaption>
+          </figure>
+          <figure className="festac-archive-figure festac-photo-portrait">
+            <Image src="/festac-50/grand-durbar-portrait-1977.jpg" width={724} height={1100} loading="lazy" unoptimized alt="A participant at the FESTAC '77 Grand Durbar in Kaduna" />
+            <figcaption><strong>Another view / Kaduna, 1977.</strong> Grand Durbar participant. Photograph by Helinä Rautavaara, Helinä Rautavaara Museum collection. <a href="https://commons.wikimedia.org/wiki/File:Festac_%2777_Grand_Durbar_(22335699956).jpg" target="_blank" rel="noopener noreferrer">Original photograph</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>. Resized and compressed; no crop.</figcaption>
+          </figure>
+        </div>
+        <div className="festac-archive-separator"><span>1977 / The festival</span><span>2005 / The town</span></div>
         <div className="festac-archive-grid">
           <figure className="festac-archive-figure">
             <Image src="/festac-50/grand-durbar-kaduna-1977.jpg" width={1300} height={862} loading="lazy" unoptimized alt="Guards from Bornu in colourful robes at the FESTAC '77 Grand Durbar in Kaduna, Nigeria" />
@@ -81,6 +96,17 @@ export default function Festac50Page() {
             <Image src="/festac-50/wood-carvings-festac-town-2005.jpg" width={308} height={432} loading="lazy" unoptimized alt="Wooden carved chairs, stools and other handicrafts displayed indoors in Festac Town, Lagos" />
             <figcaption>Wood carvings and handicrafts in Festac Town, Lagos, Nigeria, 13 May 2005. Photograph by <a href="https://commons.wikimedia.org/wiki/Special:Contributions/Heather">Heather</a>. <a href="https://commons.wikimedia.org/wiki/File:Wood_carvings_%26_handicrafts_in_Festac_Town,_Lagos,_Nigeria.jpg">View the original on Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Displayed in full, without cropping or adjustments.</figcaption>
           </figure>
+        </div>
+      </div>
+    </section>
+
+    <section className="festac-performances" id="performances" aria-labelledby="performances-title">
+      <div className="wrap">
+        <div className="festac-performances-head"><p className="eyebrow">On stage / See the work where it is held</p><h2 className="display" id="performances-title">The performances<br /><em>left a visual trace.</em></h2><p>Our small selection of reusable photographs cannot represent the full programme. Explore performances and gatherings through the photographers and institutions preserving their records. These links open third-party collections; FEPAR does not own or host their photographs, film or music.</p></div>
+        <div className="festac-performance-grid">
+          <article><span>01 / Performance photographs</span><h3>Makeba, Wonder, Sun Ra, Fela and more.</h3><p>Marilyn Nance photographed Miriam Makeba performing in Tafawa Balewa Square, Stevie Wonder on drums, Sun Ra rehearsing in FESTAC Village, Fela Kuti at the Afrika Shrine and Duro Ladipo with talking drummers. View her 1977 images, captions and rights credits in the published gallery.</p><a href="https://www.theguardian.com/artanddesign/gallery/2022/sep/30/marilyn-nances-images-of-festac-77-in-lagos" target="_blank" rel="noopener noreferrer">See Marilyn Nance&apos;s photo essay <ArrowUpRight size={17} aria-hidden="true" /></a></article>
+          <article><span>02 / Documentary film</span><h3>See the festival in motion.</h3><p>UNESCO&apos;s 26-minute FESTAC &apos;77 – Lagos Festival record describes music, dance, singing and artworks from the gathering. The archive names the filmmakers and rights holder; viewing and embedding depend on UNESCO&apos;s access and permission terms.</p><a href="https://www.unesco.org/archives/multimedia/document-29" target="_blank" rel="noopener noreferrer">Explore the UNESCO film record <ArrowUpRight size={17} aria-hidden="true" /></a></article>
+          <article><span>03 / A later sonic response</span><h3>Listen across the archive.</h3><p>Chimurenga&apos;s FESTAC &apos;77 mixtape is a contemporary interpretation of the festival&apos;s sound-world, not an unedited recording of the 1977 performances. Listen on the creator&apos;s own page.</p><a href="https://www.mixcloud.com/chimurenga/festac-a-mixtape-by-chimurenga/" target="_blank" rel="noopener noreferrer">Listen to Chimurenga&apos;s mixtape <ArrowUpRight size={17} aria-hidden="true" /></a></article>
         </div>
       </div>
     </section>
